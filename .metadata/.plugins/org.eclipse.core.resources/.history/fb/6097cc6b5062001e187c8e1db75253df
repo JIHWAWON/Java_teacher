@@ -1,0 +1,31 @@
+package ex01;
+
+class Outer4{
+	private int num=0;
+	
+	class Member{
+		void add(int n) { num +=n; }
+		int get() { return num; }
+	}
+}
+
+class Outer3{
+	private int num=0;
+	
+	class Member{
+		void add(int n) { num +=n; }
+		int get() { return num; }
+	}
+}
+
+public class MemberInnerClass {
+
+	public static void main(String[] args) {
+		
+		Outer3 o1 = new Outer3();
+		Outer3 o2 = new Outer3();
+		
+		
+	}
+
+}

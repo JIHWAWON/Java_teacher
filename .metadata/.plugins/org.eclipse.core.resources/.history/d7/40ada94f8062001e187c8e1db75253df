@@ -1,0 +1,25 @@
+package Ex06;
+
+interface Ddd{
+	int roll();
+}
+
+class Dddd implements Ddd{
+
+	@Override
+	public int roll() {
+		return (int)(Math.random()*6);
+	}
+	
+}
+
+public class Lambda8_1 {
+	public static void main(String[] args) {
+		
+		Ddd dd = ()->  (int)(Math.random()*6);
+		
+		int result = dd.roll();
+		System.out.println(result);
+		
+	}
+}

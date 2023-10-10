@@ -1,0 +1,34 @@
+package Ex06;
+
+import java.util.function.Function;
+
+interface Eee{
+	int sumArr(int[] arr);
+}
+
+class Eeee implements Eee{
+
+	@Override
+	public int sumArr(int[] arr) {
+		int sum=0;
+		for(int i : arr)
+			sum +=i;
+		return sum;
+	}
+}
+
+public class Lambda9 {
+	public static void main(String[] args) {
+		
+		Function<Integer[], Integer> f
+			= (Integer[] arr) ->  {
+				int sum=0;
+				for(int i : arr)
+					sum +=i;
+				return sum;
+			};
+		
+		int result = f.apply(new Integer[] {10,20,30,40,50}  );
+		System.out.println(result);
+	}
+}

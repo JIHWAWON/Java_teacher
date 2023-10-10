@@ -1,0 +1,46 @@
+package ex12;
+
+import java.util.*;
+import java.util.concurrent.LinkedTransferQueue;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+public class StackExam {
+
+	public static void main(String[] args) {
+		Stack<Integer> stack = new Stack<Integer>();
+		stack.push(100);
+		stack.add(10);
+		stack.add(11);
+		stack.add(9);
+		stack.add(10);
+		stack.add(15);
+		
+		stack.pop();
+		stack.pop();
+		System.out.println("---------------");
+		for(int i : stack)
+			System.out.println(i);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

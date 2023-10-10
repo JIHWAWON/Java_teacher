@@ -1,0 +1,23 @@
+package Ex06;
+
+interface Aaaa{
+	void printVal(String name, int i);
+}
+
+class Bbbb implements Aaaa{
+
+	@Override
+	public void printVal(String name, int i) {
+		System.out.println(name + "="+i); 
+	}
+	
+}
+
+public class Lambda6 {
+	public static void main(String[] args) {
+		Cal cal = new Max();
+		
+		int result = cal.max(15, 10);
+		System.out.println(result);
+	}
+}

@@ -1,0 +1,37 @@
+package ex03;
+
+class Vehicle{
+	private String name;
+	
+	public String getName() {
+		return "Vihicle name : " + name;
+	}
+	public Vehicle(String car) {
+		this.name = car;
+	}
+}
+
+class Car extends Vehicle{
+	
+	public Car(String car) {
+		super(car);
+	}
+	
+	public String getName(String val){
+		return "Car name : " + val;
+	}
+
+	public String getName(byte val[]){
+		return "Car name : " + val;
+	}
+}
+
+public class Edulwill {  //에듀윌
+
+	public static void main(String[] args) {
+		Car obj = new Car("Spark");
+		
+		System.out.println(obj.getName());
+	}
+
+}

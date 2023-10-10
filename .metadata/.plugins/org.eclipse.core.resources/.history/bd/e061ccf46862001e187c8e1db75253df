@@ -1,0 +1,26 @@
+package Ex06;
+
+interface Aaaa{
+	void printVal(String name, int i);
+}
+
+class Bbbb implements Aaaa{
+
+	@Override
+	public void printVal(String name, int i) {
+		System.out.println(name + "="+i); 
+	}
+	
+}
+
+public class Lambda6 {
+	public static void main(String[] args) {
+		Aaaa aa = new Aaaa() {
+			@Override
+			public void printVal(String name, int i) {
+				System.out.println(name + "="+i); 
+			}
+		};
+		
+	}
+}

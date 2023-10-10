@@ -1,0 +1,24 @@
+package ex05_1;
+
+import java.util.*;
+
+class Person{
+	
+}
+public class SetCollection01 {
+
+	public static void main(String[] args) {
+
+//		List<String> list = new LinkedList<String>();
+		Set<Person> list = new HashSet<String>();
+		
+		list.add("Toy");
+		list.add("Box");
+		list.add("Robot");
+		list.add("Box");
+
+		
+		
+	}
+
+}

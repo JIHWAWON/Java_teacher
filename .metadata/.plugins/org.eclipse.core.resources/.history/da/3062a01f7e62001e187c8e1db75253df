@@ -1,0 +1,25 @@
+package Ex06;
+
+import java.util.function.BiFunction;
+import java.util.function.Function;
+
+//int square(int x);
+
+// int add(int x , int y)
+//int sub(int x,int y)
+
+// Function<T, R>	T -> R	R apply(T t)
+public class Lambda7_1 {
+	public static void main(String[] args) {
+		
+		Function<Integer, Double> f1 = new Function<Integer, Double>() {
+			@Override
+			public Double apply(Integer x) {
+				return x*x*1.0;
+			}
+		};
+		
+	
+		
+	}
+}

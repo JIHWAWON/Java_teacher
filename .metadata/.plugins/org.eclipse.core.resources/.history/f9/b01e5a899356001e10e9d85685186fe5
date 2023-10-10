@@ -1,0 +1,42 @@
+package ex04;
+
+
+//문제..
+public class Exam01 {
+
+	public static void main(String[] args) {
+		
+	     //1. 랜덤을 이용해서 5명 학생 점수를 입력받는다.
+		 //2. 5명 점수 총점과 평균을 구한다.
+		
+		int[] students = new int[5];
+		int total =0;
+		double avg = 0;
+		
+		for(int i=0; i<students.length; i++)  //입력
+			students[i] = (int)(Math.random()*100)+1;
+		
+		for(int i=0; i<students.length; i++) { // 총점 계산
+			System.out.print(students[i] + " ");
+			total += students[i];
+		}
+		
+		avg = total/students.length;  //평균 계산
+		
+		System.out.println("총점 : " + total);
+		System.out.printf("평균 :%.2f", avg );
+	}
+	
+	
+	
+
+}
+
+
+
+
+
+
+
+
+

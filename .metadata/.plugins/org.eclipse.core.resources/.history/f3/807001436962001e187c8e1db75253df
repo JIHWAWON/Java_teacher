@@ -1,0 +1,16 @@
+package Ex06;
+
+interface Aaaa{
+	void printVal(String name, int i);
+}
+
+public class Lambda6 {
+	public static void main(String[] args) {
+		Aaaa aa = (String name, int i) -> System.out.println(name + "="+i);
+		
+		aa.printVal("조조", 30);
+			
+	
+		
+	}
+}

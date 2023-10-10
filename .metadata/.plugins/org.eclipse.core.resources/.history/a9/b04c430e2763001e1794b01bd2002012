@@ -1,0 +1,16 @@
+package ex01;
+
+import java.util.Arrays;
+
+public class StreamEx02 {
+
+	public static void main(String[] args) {
+		String[] names2 = {"Toy","CCCC","BB","Box","KKKKKKK", "Robot","AAAA"};
+		System.out.println("---------------------------");
+		
+		long sum2 = Arrays.stream(names2)
+	      .map(s -> s.length()) 
+	      .sum();
+	}
+
+}

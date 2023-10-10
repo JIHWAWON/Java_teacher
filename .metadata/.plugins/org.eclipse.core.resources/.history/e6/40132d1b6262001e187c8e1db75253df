@@ -1,0 +1,19 @@
+package Ex06;
+
+interface Printable4{
+	int max(int num1, int num2);
+}
+
+class Max implements Printable4{
+
+	@Override
+	public int max(int num1, int num2) {
+	}
+	
+}
+
+public class Lambda4 {
+	public static void main(String[] args) {
+		
+	}
+}

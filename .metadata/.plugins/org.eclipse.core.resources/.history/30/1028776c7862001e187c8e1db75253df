@@ -1,0 +1,17 @@
+package Ex06;
+
+import java.util.function.Consumer;
+
+//	void printVal(String name);
+//	System.out.println(name);
+
+
+public class Lambda6_1 {
+	public static void main(String[] args) {
+		Consumer<String> con = name -> System.out.println(name);
+		
+		con.accept("조조");
+				
+		
+	}
+}
